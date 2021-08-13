@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:padding="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_characters"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardElevation="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:id="@+id/iv_characters"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:contentDescription="TODO" />
+
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/tv_character_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cv_characters"
+        app:layout_constraintStart_toStartOf="@id/cv_characters"
+        android:layout_marginTop="@dimen/_10sdp"
+        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
